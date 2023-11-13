@@ -5,11 +5,11 @@
 </div>
 
 <div align="center">
-	<h1>Portfolio Murillo Couto</h1>
+	<h1>Portfólio Murillo Couto</h1>
 </div>
 
 ### O que é? 🤔
-Portfolio expositivo dos meus traballhos e estudos, todo feito em React.
+Portfólio expositivo dos meus traballhos e estudos, todo feito em React.
 <hr>
 
 ### Quais tecnologias foram usadas? 💻
