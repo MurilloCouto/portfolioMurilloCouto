@@ -1,0 +1,13 @@
+.presentation{
+    margin-left: 5rem;
+    width: 50rem;
+}
+
+.presentation h1{
+    font-size: 60px;
+}
+
+.presentation p {
+    font-size:large;
+    margin-bottom: 3rem;
+}
