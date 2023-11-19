@@ -5,15 +5,16 @@ import css from '../Imagens/css.svg'
 import react from '../Imagens/react.svg'
 
 function Skills() {
-    return (
+
+      return (
       <div id="skills" className={styles.skills}>
         <h1><strong>Habilidades</strong></h1>
         <p>Conheça um pouco das minhas principais habilidades e conhecimentos.</p>
-        <div id="imgs" className={styles.imgs}>
-          <img src={js}/>
-          <img src={html}/>
-          <img src={css}/>
-          <img src={react}/>
+        <div>
+          <img class="imgss" src={js}/>
+          <img class="imgss" src={html}/>
+          <img class="imgss" src={css}/>
+          <img class="imgss" src={react}/>
         </div>
       </div>
     );
