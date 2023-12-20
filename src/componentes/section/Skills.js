@@ -1,8 +1,4 @@
 import styles from './Skills.module.css'
-import js from '../Imagens/js.svg'
-import html from '../Imagens/html.svg'
-import css from '../Imagens/css.svg'
-import react from '../Imagens/react.svg'
 
 function Skills() {
 

@@ -1,9 +1,6 @@
 import styles from './Projects.module.css'
 import ButtonB from '../elements/ButtonB'
 import Cards from '../elements/Cards'
-import project1 from '../Imagens/project1.png'
-import project2 from '../Imagens/project2.png'
-import project3 from '../Imagens/project3.png'
 
 
 function Projects() {
