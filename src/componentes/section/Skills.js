@@ -11,10 +11,7 @@ function Skills() {
         <h1><strong>Habilidades</strong></h1>
         <p>Conheça um pouco das minhas principais habilidades e conhecimentos.</p>
         <div>
-          <img class="imgss" src={js}/>
-          <img class="imgss" src={html}/>
-          <img class="imgss" src={css}/>
-          <img class="imgss" src={react}/>
+          <img src="https://skillicons.dev/icons?i=js,css,html,scss,react" />
         </div>
       </div>
     );

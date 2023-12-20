@@ -4,10 +4,27 @@
 }
 
 .presentation h1{
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 .presentation p {
     font-size:large;
     margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .presentation{
+        width: 25rem;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .presentation h1 {
+        font-size: 1.4rem;
+    }
+
+    .presentation p{
+        font-size: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
 }

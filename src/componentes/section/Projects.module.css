@@ -1,6 +1,14 @@
 .projects{
     margin-left: 5rem;
     margin-top: 5rem;
-    font-size: 30px;
+    font-size: 1.9rem;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        margin: 0;
+        text-align: center;
+        font-size: 1rem;
+    }
 }
 

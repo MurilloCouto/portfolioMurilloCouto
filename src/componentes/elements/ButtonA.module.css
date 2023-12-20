@@ -2,11 +2,11 @@
     display: inline-block;
     background-color: #74FAC0;
     color: #01091C;
-    font-size: 19px;
+    font-size: 1.2rem;
     font-weight: 700;
     border: 0;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 1.2rem 2.4rem;
     cursor: pointer;
     margin-left: 1rem;
 }
@@ -16,4 +16,12 @@
     background-color: #01091C;
     transition-duration: 0.5s;
     transform: translateY(-7px);
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 0.75rem;
+        padding: 0.6rem 1.2rem;
+        text-align: center;
+    }
 }

@@ -10,20 +10,20 @@ function Projects() {
     return (
       <div id="projects" className={styles.projects}>
         <h1>Projetos</h1>
-          <Cards img={project1} 
-          title="Controle de produtos" 
-          tech="HTML, CSS, JS" 
-          desc="Projeto Front-end para cadastro de produtos" 
-          site="https://cadastro-produtos-dnc.netlify.app/" 
-          repo="https://github.com/MurilloCouto/cadastro-produtos"/>
+          <Cards img="https://raw.githubusercontent.com/MurilloCouto/ecommerceReact/main/homeEcommerce.png" 
+          title="Ecommerce de roupas React" 
+          tech="HTML, CSS, JS, REACT" 
+          desc="Projeto Front-end para simulação de um ecommerce de roupas" 
+          site="https://ecommerce-react-lilac-three.vercel.app/" 
+          repo="https://github.com/MurilloCouto/ecommerceReact"/>
          
           <Cards 
-          img={project2} 
-          title="Consumo de API's" 
-          tech="HTML, CSS, JS" 
-          desc="Projeto Front-end para consulta de CEP e previsão do tempo" 
-          site="https://consumodeapis.netlify.app/" 
-          repo="https://github.com/MurilloCouto/consumindoApi"/>
+          img='https://github.com/MurilloCouto/facetruqueFeed/blob/main/Captura%20de%20tela%202023-12-20%20175634.png?raw=true' 
+          title="Facetruque" 
+          tech="HTML, CSS, JS, REACT" 
+          desc="Projeto Front-end simulando um feed de uma rede social fictícia" 
+          site="https://facetruque-feed.vercel.app/" 
+          repo="https://github.com/MurilloCouto/facetruqueFeed"/>
 
           <Cards img={project3} 
           title="Landing page" 
