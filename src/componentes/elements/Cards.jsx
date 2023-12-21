@@ -20,7 +20,7 @@ function Cards({ img, title, tech, desc, site, repo }) {
       </a>
 
       {info === true && (
-        <section>
+        <section className={styles.section}>
           <h3>{title}</h3>
           <p>{tech}</p>
           <p>{desc}</p>

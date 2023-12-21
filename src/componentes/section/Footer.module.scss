@@ -26,26 +26,21 @@
 @media (max-width: 768px) {
     .footer {
         padding-bottom: 2rem;
-
-        a {
-            color: white !important;
-            text-decoration: none;
-            margin-top: 1rem;
-        }
-
-        p {
-            text-align: center;
+        p   {
+            margin-left: 1rem;
         }
     }
 
     .list {
         margin-top: 2rem;
         margin-bottom: 1rem;
-        list-style: none;
+        margin-left: 1rem;
         gap: 1rem;
 
-        display: flex;
-        justify-content: center;
+        svg {
+            width: 2rem;
+            height: 2rem;
+        }
     }
 }
 
