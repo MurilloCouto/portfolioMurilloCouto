@@ -1,39 +1,34 @@
-import styles from './Cards.module.css'
-import ButtonB from './ButtonB'
-import {useState} from 'react'
+import styles from "./Cards.module.scss";
+import ButtonB from "./ButtonB";
+import { useState } from "react";
 
-function Cards({img, title, tech, desc, site, repo}) {
+function Cards({ img, title, tech, desc, site, repo }) {
+  const [info, setInfo] = useState(false);
 
-    const [info, setInfo] = useState(false)
+  function Add() {
+    setInfo(true);
+  }
 
-    function Add(){
-      setInfo(true)
-    }
+  function Sub() {
+    setInfo(false);
+  }
 
-    function Sub(){
-      setInfo(false)
-    }
+  return (
+    <div onMouseLeave={Sub} className={styles.cards}>
+      <a onMouseEnter={Add} href={site}>
+        <img src={img} alt="erro" />
+      </a>
 
-    return (
-      <div onMouseLeave={Sub} className={styles.cards}>
-        <a onMouseEnter={Add} href={site}>
-          <img src={img} alt="erro"/>
-        </a>
-
-        {info === true &&(
-          <section>
+      {info === true && (
+        <section>
           <h3>{title}</h3>
           <p>{tech}</p>
           <p>{desc}</p>
-          <ButtonB link={repo} text="Acesse o repositório" target="_blank"/>
-          </section>
-        )
-        }
+          <ButtonB link={repo} text="Acesse o repositório" target="_blank" />
+        </section>
+      )}
+    </div>
+  );
+}
 
-        
-      </div>
-    );
-  }
-  
-  export default Cards;
-  
+export default Cards;

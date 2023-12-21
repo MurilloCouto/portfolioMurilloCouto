@@ -2,13 +2,18 @@
     display: flex;
     justify-content: space-between;
     padding: 1em;
+
+    a {
+        color: var(--white) !important;
+        text-decoration: none;
+    }
 }
 
 .list {
     list-style: none;
     display: flex;
     gap: 3rem;
-    font-size: large;
+    font-size: 1.5rem;
 }
 
 .list2 {
@@ -18,12 +23,10 @@
     gap: 3rem;
 }
 
-.navbar a {
-    color: white !important;
-    text-decoration: none;
-}
+
 
 @media (max-width: 768px) {
+    
     .navbar {
         display: flex;
         flex-direction: column;
@@ -44,10 +47,5 @@
         gap: 1rem;
         text-align: center;
         justify-content: center;
-    }
-
-    .navbar a {
-        color: white !important;
-        text-decoration: none;
-    }
+    }     
 }

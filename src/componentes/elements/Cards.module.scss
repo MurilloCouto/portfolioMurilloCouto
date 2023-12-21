@@ -1,0 +1,35 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+
+    section {
+        background-color: var(--green-500);
+        border-radius: 20px;
+        margin-left: 3rem;
+        padding: 1rem;
+        width: 20em;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    img {
+        border-radius: 20px;
+        width: 18em;
+        height: 10em;
+    }
+
+    img:hover {
+        transform: translateY(-7px);
+        transition-duration: 0.5s;
+    }
+}
+
