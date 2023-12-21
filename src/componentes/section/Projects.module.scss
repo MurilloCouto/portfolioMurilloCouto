@@ -1,4 +1,5 @@
 .projects{
+    width: 22rem;
     text-align: center;
     margin-top: 5rem;
     font-size: 1.9rem;
@@ -6,9 +7,12 @@
 
 @media (max-width: 768px) {
     .projects {
-        margin: 0;
-        text-align: center;
         font-size: 1rem;
+
+        div {
+            margin: 1rem 0;
+            margin-left: 0.5rem;
+        }
     }
 }
 

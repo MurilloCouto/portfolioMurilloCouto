@@ -18,6 +18,12 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    * {
+        width: 21rem;
+    }
+}
+
 body {
     font-family: Roboto, sans-serif;
     background-color:var(--gray-900);
