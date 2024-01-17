@@ -1,6 +1,7 @@
-import styles from "./Projects.module.scss";
-import ButtonB from "../elements/ButtonB";
 import Cards from "../elements/Cards";
+import ButtonA from "../elements/ButtonA";
+
+import styles from "./Projects.module.scss";
 
 function Projects() {
   return (
@@ -38,10 +39,10 @@ function Projects() {
         />
       </div>
 
-      <ButtonB
+      <ButtonA
         link="https://github.com/MurilloCouto?tab=repositories"
         target="_blank"
-        text="Acessar repositório completo"
+        text="Acesse meu repositório completo"
       />
     </div>
   );
