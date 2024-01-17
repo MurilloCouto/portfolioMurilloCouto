@@ -45,18 +45,20 @@ function Presentation() {
       </h2>
       <h1>Olá! Eu sou {text}</h1>
       <p>
-        Atualmente sou militar da Força Aérea Brasileira e trabalho como Controlador de Voo
-        no controle de aproximação de São Paulo, essa minha vocação para
-        solucionar conflitos e achar soluções rápidas e eficientes me trouxe até
-        o mundo da programação, me sinto cada vez mais apto a efetuar essa migração de carreira 
-        e quero cada vez mais estar incluso nesse mundo fantástico da tecnologia,
-        e para isso tenho buscado cada vez mais conhecimento técnico e prático voltado para
-        o desenvolvimento web, recentemente conclui o módulo de desenvolvimento Front End da Escola DNC
-        e estou ansioso para adquirir novos conhecimentos! 
+        Atualmente sou militar da Força Aérea Brasileira e trabalho como
+        Controlador de Voo no controle de aproximação de São Paulo, essa minha
+        vocação para solucionar conflitos e achar soluções rápidas e eficientes
+        me trouxe até o mundo da programação, me sinto cada vez mais apto a
+        efetuar essa migração de carreira e quero cada vez mais estar incluso
+        nesse mundo fantástico da tecnologia, e para isso tenho buscado cada vez
+        mais conhecimento técnico e prático voltado para o desenvolvimento web,
+        recentemente conclui o módulo de desenvolvimento Front End da Escola DNC
+        e estou ansioso para adquirir novos conhecimentos!
       </p>
       <ButtonA
         text="Conecte-se comigo!"
-        link="https://github.com/MurilloCouto"
+        link="https://www.linkedin.com/in/murillocouto/"
+        target="_blank"
       />
     </div>
   );
