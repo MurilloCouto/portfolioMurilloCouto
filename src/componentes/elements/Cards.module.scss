@@ -4,12 +4,13 @@
     margin: 3rem;
 
     section {
-        background-color: var(--green-500);
+        background-color: var(--black);
         border-radius: 20px;
         margin-left: 3rem;
         padding: 1rem;
         width: 18em;
         height: 10em;
+        box-shadow: 0 8px 12px black;
     }
 
     h3 {
@@ -26,6 +27,7 @@
         border-radius: 20px;
         width: 18em;
         height: 10em;
+        box-shadow: 0 8px 12px black;
     }
 
     img:hover {
