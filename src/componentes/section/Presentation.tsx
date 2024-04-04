@@ -1,5 +1,6 @@
+import React from "react";
 import styles from "./Presentation.module.scss";
-import ButtonA from "../elements/ButtonA";
+import ButtonA from "../elements/ButtonA.tsx";
 import { useEffect, useState } from "react";
 
 function Presentation() {

@@ -1,5 +1,6 @@
-import Cards from "../elements/Cards";
-import ButtonA from "../elements/ButtonA";
+import React from "react";
+import Cards from "../elements/Cards.tsx";
+import ButtonA from "../elements/ButtonA.tsx";
 
 import styles from "./Projects.module.scss";
 
@@ -8,11 +9,11 @@ function Projects() {
     <div id="projects" className={styles.projects}>
       <h1>Projetos</h1>
       <p>
-        Estes são alguns dos meus projetos os quais eu costumo estar sempre me
-        utilizando de temas descontraídos e que facilitam minha absorção de
-        conhecimento em cada assunto novo, tento sempre deixar as minhas
-        aplicações minimalistas e suaves, os designs não são dos melhores mas
-        são todos de minha autoria feitos com muita dedicação.
+        Estes são alguns dos meus projetos, nos quais eu costumo utilizar temas
+        descontraídos que facilitam minha absorção de conhecimento em cada novo
+        assunto. Sempre busco manter minhas aplicações minimalistas e suaves.
+        Embora os designs não sejam os melhores, são todos de minha autoria e
+        feitos com muita dedicação.
       </p>
       <div>
         <Cards
@@ -58,8 +59,8 @@ function Projects() {
 
       <ButtonA
         link="https://github.com/MurilloCouto?tab=repositories"
-        target="_blank"
         text="Acesse meu repositório completo"
+        target="_blank"
       />
     </div>
   );

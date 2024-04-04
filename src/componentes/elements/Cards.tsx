@@ -1,8 +1,19 @@
+import React from "react";
 import styles from "./Cards.module.scss";
-import ButtonB from "./ButtonB";
+import ButtonB from "./ButtonB.tsx";
 import { useState } from "react";
 
-function Cards({ img, title, tech, desc, site, repo }) {
+interface CardsProps {
+  img: string;
+  title: string;
+  tech: string;
+  desc: string;
+  site: string;
+  repo: string;
+  target: string;
+}
+
+function Cards({ img, title, tech, desc, site, repo }: CardsProps) {
   const [info, setInfo] = useState(false);
 
   function Add() {
@@ -22,12 +33,7 @@ function Cards({ img, title, tech, desc, site, repo }) {
         <h3>{title}</h3>
         <p>{tech}</p>
         <p>{desc}</p>
-        <ButtonB
-          link={repo}
-          text="Acesse o repositório"
-          target="_blank"
-          style={{ width: "4rem" }}
-        />
+        <ButtonB link={repo} text="Acesse o repositório" />
       </section>
 
       {info === true && (
@@ -35,7 +41,7 @@ function Cards({ img, title, tech, desc, site, repo }) {
           <h3>{title}</h3>
           <p className={styles.paragraph}>{tech}</p>
           <p className={styles.paragraph}>{desc}</p>
-          <ButtonB link={repo} text="Acesse o repositório" target="_blank" />
+          <ButtonB link={repo} text="Acesse o repositório" />
         </section>
       )}
     </div>

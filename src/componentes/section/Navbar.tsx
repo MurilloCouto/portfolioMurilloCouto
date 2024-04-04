@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./Navbar.module.scss";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import Nav from "react-bootstrap/Nav";
