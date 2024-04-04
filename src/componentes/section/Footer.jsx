@@ -29,7 +29,7 @@ function Footer() {
         murilloacouto@outlook.com
         <br />
         <br />
-        Murillo Couto © 2023
+        Murillo Couto © 2024
       </p>
     </div>
   );

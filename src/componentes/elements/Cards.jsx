@@ -33,8 +33,8 @@ function Cards({ img, title, tech, desc, site, repo }) {
       {info === true && (
         <section className={styles.section}>
           <h3>{title}</h3>
-          <p>{tech}</p>
-          <p>{desc}</p>
+          <p className={styles.paragraph}>{tech}</p>
+          <p className={styles.paragraph}>{desc}</p>
           <ButtonB link={repo} text="Acesse o repositório" target="_blank" />
         </section>
       )}

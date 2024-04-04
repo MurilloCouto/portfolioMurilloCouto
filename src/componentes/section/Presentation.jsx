@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 function Presentation() {
   const [text, setText] = useState("");
-  const toRotate = ["Murillo Couto", "Desenvolvedor Front-End"];
+  const toRotate = ["Murillo Couto", "Desenvolvedor Full-Stack"];
   const [loop, setLoop] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const period = 100;
@@ -46,14 +46,19 @@ function Presentation() {
       <h1>Olá! Eu sou {text}</h1>
       <p>
         Atualmente sou militar da Força Aérea Brasileira e trabalho como
-        Controlador de Voo no controle de aproximação de São Paulo, essa minha
-        vocação para solucionar conflitos e achar soluções rápidas e eficientes
-        me trouxe até o mundo da programação, me sinto cada vez mais apto a
-        efetuar essa migração de carreira e quero cada vez mais estar incluso
-        nesse mundo fantástico da tecnologia, e para isso tenho buscado cada vez
-        mais conhecimento técnico e prático voltado para o desenvolvimento web,
-        recentemente conclui o módulo de desenvolvimento Front End da Escola DNC
-        e estou ansioso para adquirir novos conhecimentos!
+        Controlador de Tráfego Aéreo em São Paulo, ser controlador de voo me fez
+        adquirir soft skills as quais acredito que vão me ajudar muito nessa
+        nova etapa da minha carreira como desenvolvedor de software, entre elas
+        destaco o trabalho em equipe, raciocínio lógico, comunicação eficaz,
+        habilidade multitarefa, atenção aos detalhes e resiliência. <br />
+        Iniciei meus estudos na área da programação em 2022 focando no
+        desenvolvimento em Python e posteriormente iniciei a Formação em
+        Tecnologia pela Escola DNC, focado em JavaScript, essa formação me
+        agregou um conhecimento técnico enorme e hoje me sinto confortável para
+        trabalhar com quaisquer tecnologias principalmente no Front-End. <br />
+        Em 2024 iniciei minha graduação em Análise e Desenvolvimento de Sistemas
+        na Universidade Presbiteriana Mackenzie com o objetivo de me
+        profissionalizar cada vez mais, e não vou parar por aqui!
       </p>
       <ButtonA
         text="Conecte-se comigo!"
