@@ -9,7 +9,7 @@
 </div>
 
 ### O que é? 🤔
-Portfólio expositivo dos meus traballhos e estudos, todo feito em React.
+Portfólio expositivo dos meus traballhos e estudos, feito em React.
 <hr>
 
 ### Quais tecnologias foram usadas? 💻
