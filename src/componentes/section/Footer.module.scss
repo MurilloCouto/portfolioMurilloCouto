@@ -11,6 +11,13 @@
   p {
     text-align: center;
   }
+
+  li {
+    transition: 0.5s ease;
+  }
+  li:hover {
+    transform: scale(1.1);
+  }
 }
 
 .list {

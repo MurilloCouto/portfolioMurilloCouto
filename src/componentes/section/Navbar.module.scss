@@ -3,11 +3,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
-  background-color: #252525;
+  background-color: #252525eb;
 
   a {
     color: var(--white) !important;
     text-decoration: none;
+  }
+
+  li {
+    transition: 0.5s ease;
+  }
+  li:hover {
+    transform: scale(1.1);
   }
 }
 
