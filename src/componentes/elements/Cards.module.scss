@@ -1,68 +1,113 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .cards {
   display: flex;
   justify-content: center;
-  margin: 3rem;
+  align-items: center;
+  height: 26rem;
+  margin: 2.5rem 6rem;
+  transition: 0.3s ease;
+  border-radius: 20px;
 
-  .section {
-    background-color: var(--black);
-    border-radius: 20px;
-    margin-left: 3rem;
-    padding: 1rem;
-    width: 16em;
-    height: 8em;
-    box-shadow: 0 8px 12px black;
+  .cardIcon {
+    display: none;
+    align-items: center;
+    position: absolute;
+    bottom: 0.25rem;
+    right: 1rem;
   }
 
-  .descricaoMobile {
-    display: none;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 16px black;
+    cursor: pointer;
+
+    .cardIcon {
+      display: flex;
+      gap: 0.25rem;
+      animation: pulse 1.5s infinite alternate;
+
+      &:hover {
+        color: #ffffff8d;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  .section {
+    background-color: var(--gray-full);
+    padding-bottom: 1rem;
+    border-radius: 20px;
+    height: 27rem;
+    box-shadow: 0 8px 12px black;
+    border: 1px solid #ffffff21;
+    outline: none;
   }
 
   h3 {
+    margin: 1rem 0;
     font-size: 1.5rem;
   }
 
   .paragraph {
     font-size: 1rem;
     margin-bottom: 1rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
+    text-align: left;
   }
 
   img {
+    margin-top: 1rem;
     border-radius: 20px;
-    width: 16em;
-    height: 8em;
-    box-shadow: 0 8px 12px black;
+    width: 16rem;
+    height: 8rem;
+    box-shadow: 0 4px 8px black;
   }
 }
 
 @media (max-width: 768px) {
   .cards {
-    flex-direction: column;
+    position: relative;
 
-    img {
-      width: 100%;
-      height: auto;
-      margin-top: 4rem;
-    }
+    .cardIcon {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 1rem;
+      width: 30%;
 
-    img:hover {
-      transform: none;
-      transition-duration: none;
+      p {
+        padding: 0;
+      }
     }
 
     .section {
-      display: none;
+      height: 27rem;
+      padding-top: 1rem;
+      position: relative;
     }
 
-    .descricaoMobile {
-      margin-top: 1rem;
-      background-color: #29292988;
-      border-radius: 10px;
-      padding: 0.5rem 1rem;
-
-      display: initial;
-      justify-content: center;
-      align-items: center;
+    img {
+      width: 90%;
+      height: auto;
+      margin-top: 0rem;
     }
 
     h3 {
@@ -72,7 +117,10 @@
 
     p {
       font-size: 1rem;
-      margin-bottom: 1rem;
+    }
+
+    svg {
+      width: 3rem;
     }
   }
 }

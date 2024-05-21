@@ -1,26 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 :root {
-  --white: #fff;
+  --white: #ffffff;
 
   --black: #000;
 
   --green-500: #63ff6331;
 
   --gray-600: #323238;
-  --gray-900: #121214;
+  --gray-900: #0c0c0e;
+  --gray-full: #070708;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
 }
 
 body {
-  background-image: url(../public/backgrd.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: var(--gray-900);
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -30,20 +37,5 @@ body {
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  background-color: var(--gray-900);
-  color: var(--white);
-
-  h1,
-  h2,
-  h3,
-  h1,
-  h5,
-  li {
-    font-family: "Exo 2", sans-serif;
-  }
-
-  p {
-    font-family: "Roboto", sans-serif;
-  }
+  font-weight: 200;
 }

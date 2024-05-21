@@ -1,20 +1,33 @@
 .projects {
   text-align: center;
   margin-top: 5rem;
-  font-size: 1.9rem;
+
+  .cardsContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 3rem 4rem;
+      text-align: center;
+    }
 
   h1 {
-    margin-left: 1rem;
+    font-size: 2rem;
   }
 
-  p {
+  .pPrincipal {
     margin-top: 1rem;
-    font-size: 1.25rem;
     text-align: justify;
-    margin: 1rem 4rem;
-    background-color: #29292988;
+    margin: 1rem 10rem;
     border-radius: 10px;
     padding: 1rem 0.5rem;
+  }
+
+  .buttonRepo {
+    display: flex;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -24,8 +37,21 @@
     margin: 0;
     padding: 0 1rem;
 
+    .cardsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 3rem 0;
+      }
+
+    .pPrincipal {
+      margin: 0;
+      font-size: 1rem;
+    }
+
     div {
-      margin: 1rem 0;
+      margin: 2rem 0;
     }
 
     h1 {

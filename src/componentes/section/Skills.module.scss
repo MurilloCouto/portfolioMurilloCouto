@@ -1,35 +1,38 @@
 .skills {
-  background-color: #000000cb;
+  background-color: #000000b1;
   color: var(--white);
   text-align: center;
   padding: 1.25rem;
   margin-top: 5rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-left: 16rem;
+  margin-right: 16rem;
   border-radius: 10px;
 
   img {
-    width: 5rem;
+    width: 3.5rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    margin: 2rem;
-    transition-duration: 0.5s;
+    margin: 1rem;
+    transition-duration: 0.3s;
   }
 
   img:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
     transition-duration: 0.5s;
-    filter: drop-shadow(0 0.5rem 0.5rem #ffffff);
+    filter: drop-shadow(0 0.25rem 0.25rem #ffffff);
   }
 
   h1 {
-    font-size: 3.75rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    margin-top: 1rem;
   }
 
   p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -50,6 +53,10 @@
     h1 {
       font-size: 2rem;
       margin: 0;
+    }
+
+    h3 {
+      margin-bottom: 0.5rem;
     }
 
     p {
