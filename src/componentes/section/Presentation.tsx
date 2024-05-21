@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Presentation.module.scss";
 import ButtonA from "../elements/ButtonA.tsx";
-import { useEffect, useState } from "react";
+import { FaLinkedinIn, FaGithub, FaInstagram, FaReadme } from "react-icons/fa";
 
 function Presentation() {
   const [text, setText] = useState("");
@@ -44,11 +44,11 @@ function Presentation() {
   return (
     <div id="presentation" className={styles.presentation}>
       <h2>
-        <strong>Bem-vindo ao meu Portfólio</strong>
+        <strong>Olá! Bem-vindo ao meu Portfólio</strong>
       </h2>
-      <h1>Olá! Eu sou {text}</h1>
+      <h1>Eu sou {text}</h1>
       <p>
-        Atualmente, sirvo como militar na Força Aérea Brasileira e desempenho a
+        Atualmente, trabalho como militar na Força Aérea Brasileira e desempenho a
         função de Controlador de Tráfego Aéreo em São Paulo. Ser controlador de
         voo me proporcionou o desenvolvimento de habilidades interpessoais que
         acredito serem extremamente úteis nesta nova etapa da minha carreira
@@ -65,11 +65,33 @@ function Presentation() {
         Presbiteriana Mackenzie, com o objetivo de me profissionalizar ainda
         mais. E não pretendo parar por aqui!
       </p>
-      <ButtonA
-        text="Conecte-se comigo!"
-        link="https://www.linkedin.com/in/murillocouto/"
-        target="_blank"
-      />
+      <div className={styles.links}>
+        <ButtonA 
+          icon={FaReadme}
+          title="Currículo"
+          link="/public/MurilloCouto-CV.pdf" 
+          target="_blank" 
+          download="Murillo Couto - CV"
+        />
+        <ButtonA 
+          icon={FaGithub}
+          title="GitHub"
+          link="https://github.com/username" 
+          target="_blank" 
+        />
+        <ButtonA
+          icon={FaLinkedinIn}
+          title="LinkedIn"
+          link="https://www.linkedin.com/in/murillocouto/"
+          target="_blank"
+        />    
+        <ButtonA
+          icon={FaInstagram}
+          title="Instagram"
+          link="https://www.instagram.com/username/"
+          target="_blank"
+        />     
+      </div>
     </div>
   );
 }

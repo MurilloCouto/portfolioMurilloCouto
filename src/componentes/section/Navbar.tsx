@@ -1,40 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
-import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import Nav from "react-bootstrap/Nav";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className={styles.navbar}>
-      <ul className={styles.list}>
+      <div className={styles.hamburger} onClick={toggleMenu}>
+        <FaBars className={`${styles.icon} ${isMenuOpen ? styles.hideIcon : styles.showIcon}`} />
+        <FaTimes className={`${styles.icon} ${isMenuOpen ? styles.showIcon : styles.hideIcon}`} />
+      </div>
+      <ul className={`${styles.list} ${isMenuOpen ? styles.showMenu : ""}`}>
         <li>
-          <Nav.Link href="#presentation">Apresentação</Nav.Link>
+          <Nav.Link onClick={() => scrollToSection("presentation")}>Apresentação</Nav.Link>
         </li>
         <li>
-          <Nav.Link href="#skills">Habilidades</Nav.Link>
+          <Nav.Link onClick={() => scrollToSection("skills")}>Habilidades</Nav.Link>
         </li>
         <li>
-          <Nav.Link href="#projects">Projetos</Nav.Link>
-        </li>
-      </ul>
-      <ul className={styles.list2}>
-        <li>
-          {" "}
-          <a href="https://www.instagram.com/murilloacouto/" target="_blank">
-            <FaInstagram size={35} />
-          </a>
+          <Nav.Link onClick={() => scrollToSection("projects")}>Projetos</Nav.Link>
         </li>
         <li>
-          {" "}
-          <a href="https://github.com/MurilloCouto" target="_blank">
-            <FaGithub size={35} />
-          </a>
-        </li>
-        <li>
-          {" "}
-          <a href="https://www.linkedin.com/in/murillocouto" target="_blank">
-            <FaLinkedin size={35} />
-          </a>
+          <Nav.Link onClick={() => scrollToSection("contato")}>Contato</Nav.Link>
         </li>
       </ul>
     </div>
