@@ -69,14 +69,14 @@ function Presentation() {
         <ButtonA 
           icon={FaReadme}
           title="Currículo"
-          link="/public/MurilloCouto-CV.pdf" 
+          link="https://github.com/MurilloCouto/portfolioMurilloCouto/raw/main/public/MurilloCouto-CV.pdf" 
           target="_blank" 
           download="Murillo Couto - CV"
         />
         <ButtonA 
           icon={FaGithub}
           title="GitHub"
-          link="https://github.com/username" 
+          link="https://github.com/murillocouto" 
           target="_blank" 
         />
         <ButtonA
@@ -88,7 +88,7 @@ function Presentation() {
         <ButtonA
           icon={FaInstagram}
           title="Instagram"
-          link="https://www.instagram.com/username/"
+          link="https://www.instagram.com/murilloacouto/"
           target="_blank"
         />     
       </div>
