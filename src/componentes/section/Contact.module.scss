@@ -4,6 +4,14 @@
   justify-content: center;
   text-align: left;
   padding: 4rem 20rem;
+  opacity: 0;
+  transform: translatex(-50%);
+  transition: opacity 2s ease-out, transform 2s ease-out;
+
+  &.animate {
+    opacity: 1;
+    transform: translatex(0);
+  }
 
   h1 {
     text-align: center;

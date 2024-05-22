@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Cards from "../elements/Cards.tsx";
 import ButtonA from "../elements/ButtonA.tsx";
-
 import styles from "./Projects.module.scss";
 
 function Projects() {
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const projectsSection = document.getElementById("projects");
+      if (!projectsSection) return;
+
+      const rect = projectsSection.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+      if (!inView && isVisible) {
+        setInView(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [inView]);
+
   return (
-    <div id="projects" className={styles.projects}>
+    <div id="projects" className={`${styles.projects} ${inView ? styles.animate : ""}`}>
       <h1>Projetos</h1>
       <p className={styles.pPrincipal}>
         Estes são alguns dos meus projetos, nos quais eu costumo utilizar temas
@@ -63,10 +82,10 @@ function Projects() {
       </div>
       <div className={styles.buttonRepo}>
         <ButtonA
-        link="https://github.com/MurilloCouto?tab=repositories"
-        text="Acesse meu repositório completo"
-        target="_blank"
-      />
+          link="https://github.com/MurilloCouto?tab=repositories"
+          text="Acesse meu repositório completo"
+          target="_blank"
+        />
       </div>
     </div>
   );

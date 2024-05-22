@@ -9,15 +9,16 @@ interface CardsProps {
   desc: string;
   site: string;
   target: string;
+  className?: string; // Adicionando className como uma propriedade opcional
 }
 
-function Cards({ img, title, tech, desc, site, target }: CardsProps) {
+function Cards({ img, title, tech, desc, site, target, className }: CardsProps) {
   return (
-    <div className={styles.cards}>
+    <div className={`${styles.cards} ${className}`}>
         <section className={styles.section}>
           <a href={site} target={target}>
             <img src={img} alt="erro" />
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             <p className={styles.paragraph}><strong>Stack utilizada: </strong> {tech}</p>
             <p className={styles.paragraph}><strong>Resumo: </strong>{desc}</p>
             <div className={styles.cardIcon}>

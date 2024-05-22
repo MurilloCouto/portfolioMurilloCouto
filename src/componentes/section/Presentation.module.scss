@@ -2,6 +2,11 @@
   margin-top: 2rem;
   padding: 0 10rem;
   text-align: center;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 2s ease-out,
+  transform 2s ease-out;
 
   .links {
     display: flex;
@@ -22,10 +27,6 @@
     margin: 1rem 0;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
-
   a {
     text-decoration: none;
     color: var(--gray-900);
@@ -37,6 +38,45 @@
     border-radius: 10px;
     padding: 1rem 0.5rem;
   }
+
+  &.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .scrollIndicator {
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 40px;
+
+    span {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 0.5rem solid transparent;
+      border-right: 0.5rem solid transparent;
+      border-top: 1rem solid #fff;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: jump 1s infinite;
+    }
+  }
+
+  @keyframes jump {
+
+    0%,
+    100% {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -47,19 +87,11 @@
     h1 {
       font-size: 1.25rem;
       height: 1rem;
-      margin: 0;
-    }
-
-    h2 {
-      font-size: 1rem;
-      padding: 1rem 0 2rem 0;
-      margin: 0;
+      margin: 1rem 0;
     }
 
     p {
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
-      margin-top: 2rem;
+      font-size: 0.875rem;
     }
   }
 }

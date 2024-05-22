@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Presentation.module.scss";
 import ButtonA from "../elements/ButtonA.tsx";
 import { FaLinkedinIn, FaGithub, FaInstagram, FaReadme } from "react-icons/fa";
@@ -9,6 +9,7 @@ function Presentation() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [delta, setDelta] = useState(100);
   const period = 100;
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     const toRotate = ["Murillo Couto", "Desenvolvedor Full-Stack"];
@@ -41,11 +42,15 @@ function Presentation() {
     };
   }, [text, loop, isDeleting, delta]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 1000);
+  }, []);
+
   return (
-    <div id="presentation" className={styles.presentation}>
-      <h2>
-        <strong>Olá! Bem-vindo ao meu Portfólio</strong>
-      </h2>
+    <div id="presentation" className={`${styles.presentation} ${loaded ? styles.animate : ''}`}>
+      <h3><strong>Olá! Bem-vindo ao meu Portfólio</strong></h3>
       <h1>Eu sou {text}</h1>
       <p>
         Atualmente, trabalho como militar na Força Aérea Brasileira e desempenho a
@@ -90,7 +95,10 @@ function Presentation() {
           title="Instagram"
           link="https://www.instagram.com/murilloacouto/"
           target="_blank"
-        />     
+        />   
+      </div>
+      <div className={styles.scrollIndicator}>
+          <span></span>
       </div>
     </div>
   );
