@@ -9,17 +9,17 @@
 </div>
 
 ### O que é? 🤔
-Portfólio expositivo dos meus traballhos e estudos, feito em React.
+Portfólio expositivo dos meus traballhos e estudos, feito com React.js e TypeScript.
 <hr>
 
 ### Quais tecnologias foram usadas? 💻
-- HTML5
-- CSS3
-- Javascript
+- SASS
+- TypeScript
+- React.js
 <hr>
 
 ### Está online? 📡
-SIM! Basta [clicar aqui](https://portfolio-murillo-couto.vercel.app/) para visualizar o site que está hospedado nos servidores da Vercel.
+SIM! Basta [clicar aqui](https://murillocouto.vercel.app/) para visualizar o site que está hospedado nos servidores da Vercel.
 <hr>
 
 by Murillo Couto<br>
