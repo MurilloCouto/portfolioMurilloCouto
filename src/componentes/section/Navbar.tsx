@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import Nav from "react-bootstrap/Nav";
 import { FaBars, FaTimes } from "react-icons/fa";
-import profilePic from '../../public/profilePic.jpg'; 
+import profilePic from '../../assets/profilePic.jpg'; 
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
