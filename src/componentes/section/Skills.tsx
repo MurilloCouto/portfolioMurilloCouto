@@ -25,7 +25,7 @@ function Skills() {
   return (
     <div id="skills" className={`${styles.skills} ${inView ? styles.animate : ''}`}>
       <div className={styles.section}>
-        <h1><strong>Habilidades</strong></h1>
+        <h1><strong>Tecnologias</strong></h1>
         <p>Estas são algumas das minhas principais habilidades e conhecimentos.</p>
         <h3>Front-end</h3>
         <div className={styles.icons}>
