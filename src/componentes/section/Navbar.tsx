@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import Nav from "react-bootstrap/Nav";
 import { FaBars, FaTimes } from "react-icons/fa";
+import profilePic from '../../public/profilePic.jpg'; 
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,8 +21,8 @@ function Navbar() {
   return (
     <div className={styles.navbar}>
       <div className={styles.hamburger} onClick={toggleMenu}>
-        <FaBars className={`${styles.icon} ${isMenuOpen ? styles.hideIcon : styles.showIcon}`} />
-        <FaTimes className={`${styles.icon} ${isMenuOpen ? styles.showIcon : styles.hideIcon}`} />
+        <FaBars className={`${styles.icon} ${isMenuOpen ? styles.hideIcon : styles.showIcon}`} size={22}/>
+        <FaTimes className={`${styles.icon} ${isMenuOpen ? styles.showIcon : styles.hideIcon}`} size={22}/>
       </div>
       <ul className={`${styles.list} ${isMenuOpen ? styles.showMenu : ""}`}>
         <li>
@@ -37,6 +38,7 @@ function Navbar() {
           <Nav.Link onClick={() => scrollToSection("contato")}>Contato</Nav.Link>
         </li>
       </ul>
+      <img src={profilePic} alt="Profile" className={`${styles.profilePic} ${isMenuOpen ? styles.hidden : ""}`} />
     </div>
   );
 }
