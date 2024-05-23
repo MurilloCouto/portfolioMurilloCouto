@@ -11,6 +11,7 @@ function Navbar() {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setIsMenuOpen(false);
     }
   };
 
@@ -26,10 +27,10 @@ function Navbar() {
       </div>
       <ul className={`${styles.list} ${isMenuOpen ? styles.showMenu : ""}`}>
         <li>
-          <Nav.Link onClick={() => scrollToSection("presentation")}>Apresentação</Nav.Link>
+          <Nav.Link onClick={() => scrollToSection("presentation")}>Sobre mim</Nav.Link>
         </li>
         <li>
-          <Nav.Link onClick={() => scrollToSection("skills")}>Habilidades</Nav.Link>
+          <Nav.Link onClick={() => scrollToSection("skills")}>Tecnologias</Nav.Link>
         </li>
         <li>
           <Nav.Link onClick={() => scrollToSection("projects")}>Projetos</Nav.Link>
